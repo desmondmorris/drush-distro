@@ -1,7 +1,8 @@
 # Distro
 
-A Drush command for scaffolding custom Drupal distributions
+[![wercker status](https://app.wercker.com/status/4e20dd0ceb965f30a7fa745606bca01f "wercker status")](https://app.wercker.com/project/bykey/4e20dd0ceb965f30a7fa745606bca01f)
 
+A Drush command for scaffolding custom Drupal distributions
 
 ## Requirements
 
