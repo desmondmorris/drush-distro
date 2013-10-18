@@ -71,6 +71,7 @@ function drush_distro($name = '') {
   $version = drush_choice(
     array(
       DISTRO_DEFAULT_VERSION => '7.x (default)',
+      '8.x' => '8.x (experimental)'
     ),
     'Drupal Vesion',
     '!value'

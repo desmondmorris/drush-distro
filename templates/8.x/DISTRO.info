@@ -1,0 +1,5 @@
+name = {{DISTRO}}
+description = {{DISTRO}} site install profile
+core = 8.x
+dependencies[] = block
+
