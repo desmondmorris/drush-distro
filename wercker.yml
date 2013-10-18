@@ -1,0 +1,13 @@
+box: wercker/php
+build:
+  steps:
+    - script:
+        name: Activate PHP 5.3
+        code: phpenv global 5.3
+    - script:
+        name: install dependencies
+        code: composer install
+    - script:
+        name: run unit tests
+        code: |-
+          phpunit --bootstrap=vendor/drush/drush/tests/drush_testcase.inc tests/

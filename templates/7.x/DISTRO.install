@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the {{DISTRO}} installation profile.
+ */
+
+/**
+ * Implements hook_install_tasks().
+ */
+// function {{DISTRO}}_install_tasks($install_state) {
+//   $tasks = array ();
+//   return $tasks;
+// }
