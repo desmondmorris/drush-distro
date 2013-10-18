@@ -10,4 +10,4 @@ build:
     - script:
         name: run unit tests
         code: |-
-          phpunit --bootstrap=vendor/drush/drush/tests/drush_testcase.inc tests/
+          phpunit --bootstrap=vendor/drush/drush/tests/drush_testcase.inc
