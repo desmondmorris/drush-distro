@@ -1,5 +1,5 @@
 {
-    "name": "desmondmorris/distro",
+    "name": "desmondmorris/drush-distro",
     "description": "A Drupal distribution scaffold generator",
     "license": "MIT",
     "authors": [
