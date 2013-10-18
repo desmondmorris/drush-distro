@@ -104,8 +104,11 @@ function drush_distro($name = '') {
 function drush_distro_validate($name = ''){
 
   $valid = _distro_valid_name($name);
-  if( $valid !== TRUE) {
-    return $valid;
+  if( $valid === FALSE) {
+    return drush_set_error(
+      'DRUSH_DISTRO_INVALID_NAME',
+      'Your distro name cannot be a numeric value.'
+    );;
   }
 }
 
@@ -117,10 +120,7 @@ function drush_distro_validate($name = ''){
  */
 function _distro_valid_name($name) {
   if (is_numeric($name)) {
-    return drush_set_error(
-      'DRUSH_DISTRO_INVALID_NAME',
-      'Your distro name cannot be a numeric value.'
-    );
+    return FALSE;
   }
   return TRUE;
 }
